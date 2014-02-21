@@ -1,4 +1,10 @@
 Nakedplus::Application.routes.draw do
+  root "pages#home"
+  get "products" => "pages#products"
+  get "signup" => "pages#signup"
+  get "support" => "pages#support"
+  get "about" => "pages#about"
+  get "login" => "pages#login"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
